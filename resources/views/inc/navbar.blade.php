@@ -7,7 +7,7 @@
         <div id="navbarsExampleDefault">
           <ul>
             <li>
-              <a href="/TP_IGL/public/">Home <span class="sr-only">(current)</span></a>
+              <a href="/TP_IGL/public/">Home</a>
             </li>
             <li >
               <a href="/TP_IGL/public/about">About</a>

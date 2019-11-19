@@ -18,5 +18,7 @@
 Route:: get ('/', 'PagesController@welcome');
 Route:: get ('/about', 'PagesController@AfficherPlanning');
 Route:: get ('/AfficherPlanning', 'PagesController@about');
+//Route:: get ('/note', 'EtudiantController');
 
-Route:: resource('note', 'DataController');
+Route:: resource('note', 'EtudiantController');
+  

@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\etudiant;
 
-class DataController extends Controller
+class EtudiantControllser extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,7 @@ class DataController extends Controller
      */
     public function index()
     {
-        //
+        //return view('marks.index');
     }
 
     /**
