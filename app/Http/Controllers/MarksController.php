@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\etudiant;
+use DB;
 
-class EtudiantControllser extends Controller
+class MarksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,8 @@ class EtudiantControllser extends Controller
      */
     public function index()
     {
-        //return view('marks.index');
+        $etud = etudiant::all();
+        return view('marks.index')-> with('etud', $etud) ;
     }
 
     /**
@@ -25,7 +26,7 @@ class EtudiantControllser extends Controller
      */
     public function create()
     {
-        //
+        return view ('marks.create');
     }
 
     /**

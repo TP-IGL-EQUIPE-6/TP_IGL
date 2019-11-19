@@ -6,16 +6,11 @@
       
         <div id="navbarsExampleDefault">
           <ul>
-            <li>
-              <a href="/TP_IGL/public/">Home</a>
-            </li>
-            <li >
-              <a href="/TP_IGL/public/about">About</a>
-            </li>
-            <li >
-                <a href="/TP_IGL/public/AfficherPlanning">AfficherPlanning</a>
-            </li>
-            
+            <li><a href="/TP_IGL/public/">Home</a></li>
+            <li><a href="/TP_IGL/public/about">About</a></li>
+            <li> <a href="/TP_IGL/public/AfficherPlanning">AfficherPlanning</a></li>
+            <li> <a href="/TP_IGL/public/note">Calcul de la moyenne</a></li>
+          </ul> 
             <!--
             <li >
               <a href="" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -28,7 +23,7 @@
                 <a href="#">Something else here</a>
               </div>
             </li>
-          </ul>
+          
         -->
 
           <form>
