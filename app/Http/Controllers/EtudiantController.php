@@ -15,7 +15,11 @@ class EtudiantController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
         //Affichage de la liste de tous les etudiants 
+=======
+        //Affichage liste etudiants 
+>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
         $etud = etudiant::all();
         return view('marks.index')-> with('etud', $etud) ;
     }
@@ -43,6 +47,7 @@ class EtudiantController extends Controller
             'grp' => 'required'
         ]);
         return 1234;
+<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
     }
 
        //function to get data (afficher les nom des etudiants et calcul leur moyennes) 
@@ -55,7 +60,18 @@ class EtudiantController extends Controller
         ->where ([['niveau', $varNiveau], ['grp', $varGrp]])
         ->get();
         return view ('marks.getData')->with('student',$select); 
+=======
+>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
     }
+
+       //function to get data (afficher les nom des etudiants) 
+       public function getData(Request $request)
+       {
+           $varNiveau = $request->get('niveau');
+           $varGrp = $request->get('grp');
+           $select = DB:: table('etudiants')->where ([['niveau', $varNiveau], ['grp', $varGrp]]) ->get();
+           return view ('marks.getData')->with('student',$select); 
+       }
 
     /**
      * Display the specified resource.
@@ -65,7 +81,7 @@ class EtudiantController extends Controller
      */
     public function show($id)
     {
-        //
+    
     }
 
     /**
@@ -103,8 +119,12 @@ class EtudiantController extends Controller
         //
     }
 
+<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
     public function listeEtudiant()
     {
+=======
+    public function listeEtudiant(){
+>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
         $etudiants = Etudiant::all();
         return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
     }

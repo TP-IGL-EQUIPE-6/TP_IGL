@@ -22,7 +22,10 @@ Route:: get ('/AfficherPlanning', 'PagesController@about');
 Route:: get('note', 'EtudiantController@index');
 Route:: get('/note/store', 'EtudiantController@store');
 Route:: get('/note/create', 'EtudiantController@create');
+<<<<<<< HEAD
 Route:: get('/note/update', 'EtudiantController@update');
+=======
+>>>>>>> sauvegarde de modif
 Route:: get('/note/getData' , 'EtudiantController@getData');
 Route:: get('/note/listeEtudiant' , 'EtudiantController@listeEtudiant');
 
