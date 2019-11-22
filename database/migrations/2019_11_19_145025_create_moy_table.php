@@ -27,7 +27,7 @@ class CreateMoyTable extends Migration {
 			$table->integer('coeff5')->default(2);
 			$table->float('module6', 10, 0);
 			$table->integer('coeff6')->default(2);
-			$table->float('moy', 10, 0)->nullable();
+			$table->float('moy', 10, 0);
 		});
 	}
 

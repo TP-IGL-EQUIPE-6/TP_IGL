@@ -18,7 +18,13 @@
 Route:: get ('/', 'PagesController@welcome');
 Route:: get ('/about', 'PagesController@AfficherPlanning');
 Route:: get ('/AfficherPlanning', 'PagesController@about');
-//Route:: get ('/note', 'EtudiantController');
 
-Route:: resource('note', 'MarksController');
+Route:: get('note', 'EtudiantController@index');
+Route:: get('/note/store', 'EtudiantController@store');
+Route:: get('/note/create', 'EtudiantController@create');
+Route:: get('/note/update', 'EtudiantController@update');
+Route:: get('/note/getData' , 'EtudiantController@getData');
+Route:: get('/note/listeEtudiant' , 'EtudiantController@listeEtudiant');
+
+//Route :: resource('note', 'EtudiantController');
   

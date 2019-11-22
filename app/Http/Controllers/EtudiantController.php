@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\etudiant;
+use App\Etudiant;
 use DB;
 
-class MarksController extends Controller
+class EtudiantController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,6 +15,7 @@ class MarksController extends Controller
      */
     public function index()
     {
+        //Affichage de la liste de tous les etudiants 
         $etud = etudiant::all();
         return view('marks.index')-> with('etud', $etud) ;
     }
@@ -37,7 +38,23 @@ class MarksController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this ->validate ($request, [
+            'niveau' => 'required',
+            'grp' => 'required'
+        ]);
+        return 1234;
+    }
+
+       //function to get data (afficher les nom des etudiants et calcul leur moyennes) 
+    public function getData(Request $request)
+    {
+        $varNiveau = $request->get('niveau');
+        $varGrp = $request->get('grp');
+        $select = DB:: table('etudiants')
+        ->join('moy', "etudiants.id", '=', 'moy.matricule')
+        ->where ([['niveau', $varNiveau], ['grp', $varGrp]])
+        ->get();
+        return view ('marks.getData')->with('student',$select); 
     }
 
     /**
@@ -71,7 +88,8 @@ class MarksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $moyen = Moy::find($id);
+        
     }
 
     /**
@@ -83,5 +101,11 @@ class MarksController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function listeEtudiant()
+    {
+        $etudiants = Etudiant::all();
+        return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
     }
 }
