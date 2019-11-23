@@ -1,3 +1,24 @@
+<style type="text/css">
+	table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5;}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+
 @extends ('layouts.app')
 
 @section('content')
