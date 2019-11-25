@@ -20,7 +20,7 @@ class CreateEtudiantsTable extends Migration
 			$table->string('prenom', 30);
 			$table->string('niveau', 5);
 			$table->string('section', 2);
-			$table->integer('grp');
+			$table->string('grp');
 		});
 	}
 

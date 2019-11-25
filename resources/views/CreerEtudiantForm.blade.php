@@ -11,6 +11,8 @@
 <div class='my-10'>
     <form action="{{route('Etudiant.store')}}" method="POST" class='w-4/5'>
 
+        @csrf
+
         <div class="py-3">
             <input type="text" name="nom" id="nom" class='bg-form'>
         </div>
@@ -19,6 +21,12 @@
         </div>
         <div class="py-3">
             <input type="text" name="matricule" id="matricule" class='bg-form'>
+        </div>
+        <div class="py-3">
+            <input type="email" name="email" id="email" class='bg-form'>
+        </div>
+        <div class="py-3">
+            <input type="password" name="pwd" id="pwd">
         </div>
         <div>
             <select name="niveau" id="niveau">  
