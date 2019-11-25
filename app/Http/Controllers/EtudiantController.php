@@ -88,7 +88,6 @@ class EtudiantController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $moyen = Moy::find($id);
         
     }
 

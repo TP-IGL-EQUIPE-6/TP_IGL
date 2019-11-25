@@ -9,5 +9,4 @@
     @else 
         <p> no student found </p>
     @endif
-    <h3>Affichage des moyennes</h3> 
 @endsection
