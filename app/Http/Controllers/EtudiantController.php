@@ -128,4 +128,8 @@ class EtudiantController extends Controller
         $etudiants = Etudiant::all();
         return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
     }
+
+    public function createEtudiant(){
+        return view("CreerEtudiantForm");
+    }
 }
