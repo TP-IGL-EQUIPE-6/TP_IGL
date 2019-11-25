@@ -15,11 +15,11 @@ class EtudiantController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
+//<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
         //Affichage de la liste de tous les etudiants 
-=======
+//=======
         //Affichage liste etudiants 
->>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
+//>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
         $etud = etudiant::all();
         return view('marks.index')-> with('etud', $etud) ;
     }
@@ -47,7 +47,7 @@ class EtudiantController extends Controller
             'grp' => 'required'
         ]);
         return 1234;
-<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
+//<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
     }
 
        //function to get data (afficher les nom des etudiants et calcul leur moyennes) 
@@ -60,12 +60,12 @@ class EtudiantController extends Controller
         ->where ([['niveau', $varNiveau], ['grp', $varGrp]])
         ->get();
         return view ('marks.getData')->with('student',$select); 
-=======
->>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
+//=======
+//>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
     }
 
        //function to get data (afficher les nom des etudiants) 
-       public function getData(Request $request)
+       public function getData1(Request $request)
        {
            $varNiveau = $request->get('niveau');
            $varGrp = $request->get('grp');
@@ -119,17 +119,22 @@ class EtudiantController extends Controller
         //
     }
 
-<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
-    public function listeEtudiant()
-    {
-=======
+//<<<<<<< HEAD:app/Http/Controllers/EtudiantController.php
+    
+//=======
     public function listeEtudiant(){
->>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
+//>>>>>>> sauvegarde de modif:app/Http/Controllers/EtudiantController.php
         $etudiants = Etudiant::all();
         return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
     }
 
+    // Afficher le formulaire de creation d'un compte étudiant
     public function createEtudiant(){
         return view("CreerEtudiantForm");
+    }
+    // Sauvgarder les données récuperer à partir du formulaire de creation d' un compte étudiant
+    // dans la table <<create_etudiant_table>> de la DB et se redirger vers la page d'acceuil 
+    public function storeEtudiant(Request $request){
+        
     }
 }

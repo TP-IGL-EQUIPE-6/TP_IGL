@@ -30,4 +30,8 @@ Route:: get('/note/getData' , 'EtudiantController@getData');
 Route:: get('/note/listeEtudiant' , 'EtudiantController@listeEtudiant');
 
 //Route :: resource('note', 'EtudiantController');
-Route::get('/Etudiant/Creer','EtudiantController@createEtudiant')->name('creerEtudaint');
+
+// route de creation d'un compte étudiant
+Route::get('/Etudiant/Creer','EtudiantController@createEtudiant')->name('Etudiant.create');
+Route::post('/Etudiant/Sauvgarder','EtudiantController@storeEtudiant')->name('Etudiant.store');
+?>
