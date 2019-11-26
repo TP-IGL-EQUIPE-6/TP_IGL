@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Etudiant;
 use DB;
 
+
 class EtudiantController extends Controller
 {
     /**
