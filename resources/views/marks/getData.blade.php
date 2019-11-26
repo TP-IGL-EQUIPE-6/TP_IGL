@@ -5,6 +5,8 @@
 
 table, th, td {
   border: 1px solid black;
+  width:900px;
+  margin_left:235px;
 }
 th, td {
   padding: 15px;
@@ -14,9 +16,13 @@ th, td {
 tr:hover {background-color: #f5f5f5;}
 
 th {
-  background-color: #4CAF50;
+  background-color:rgb(182,157,230);
   color: white;
 }
+h1{
+  margin_left:300px;
+}
+
 </style>
 
 
@@ -24,17 +30,29 @@ th {
 
 @section('content')
     <h1>Affichage liste des etudiants avec moyenne</h1>
-
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Matricule</th>
+                <th>nom</th>
+                <th>prenom</th>
+                <th>niveau</th>
+                <th>groupe</th>
+                <th>moyenne generale</th>
+            </tr>
+        </thead>
+        <tbody>
     @foreach($student as $etudiant)      
-        <h3>Matricule : {{$etudiant -> id}} </br>
-            Nom : {{$etudiant -> nom}} </br>
-            Prénom : {{$etudiant -> prenom}} </br>
-            Niveau : {{$etudiant -> niveau}} </br>
-            Groupe : {{$etudiant -> grp}}</h3>
-        <h4> moyenne générale = {{($etudiant -> moyenne)}} </h4>
-        <hr>       
+        <tr>
+         <td> {{$etudiant -> id}} </td>
+           <td>{{$etudiant -> nom}} </td>
+            <td> {{$etudiant -> prenom}} </td>
+            <td> {{$etudiant -> niveau}} </td>
+            <td> {{$etudiant -> grp}}</td>
+        <td>  {{($etudiant -> moyenne)}} </td>
+        </tr>       
     @endforeach
-    
+    </tbody>
 @endsection
 
 
