@@ -1,7 +1,7 @@
 <style type="text/css">
 nav{
     width: 900;
-    margin-left: 235px;
+    margin-left: 277px;
 }
  .ulNav {
   list-style-type: none;
@@ -54,7 +54,7 @@ nav{
 
 </style>
 <nav >
-    <a href="#">{{config('app.name', 'Scolarité')}}</a>  
+      
     <div id="navbarsExampleDefault">
     <ul class="ulNav">
         <li class="linav"><a href="/TP_IGL/public/">Home</a></li>

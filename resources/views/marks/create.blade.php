@@ -132,7 +132,7 @@ a.discrete {
   height:  500px; 
   min-height:  100%; 
   position:  relative; 
-  background-image: url(/TP_IGL/img/bg.PNG);
+  background-image: url(/TP_IGL/resources/views/marks/bg.PNG);
   background-repeat: no-repeat;
   background-size:cover;
   
@@ -154,13 +154,10 @@ a.discrete {
 @extends ('layouts.app')
 
 @section('content')
-<head>
-               <title>Recherche1</title>
-               
-                  <script src="/TP_IGL/js/vue.js"></script>
+           
             
-</head>
 <body class="BodyZone">
+    <script src="/TP_IGL/resources/js/vue.js"></script>
     <div class="session">
         <div class="left"> </div>
         <form id="app" @submit="checkForm" action="{{url('/note/getData')}}" method="get">
@@ -180,19 +177,23 @@ a.discrete {
   </br> </br>
   <label class="labelZone" for="grp">Groupe : </label>
   <input class="inputZone" placeholder="grp" type="number" max="9" min="1" name="grp" id="grp" autocomplete="off" v-model="grp"></br></br>      
+  <!--
   <p class="perr" v-if="errors.length">
                     
-     <ul>
-       <li class="err" v-for="error in errors    ">{{ error }}</li>
-     </ul>
-   </p>
+    <ul>
+      
+      <li class="err" v-for="error in errors "> error </li>
+      
+    </ul>
+   </p>-->
   <input class="buttonZone" type="submit" value="Recherche">  
  </form>
     </div>
+    
 </body>
 @endsection
 <script>
-   const app = new Vue({
+const app = new Vue({
   el:'#app',
   data:{
     errors:[],
@@ -210,4 +211,5 @@ a.discrete {
     }
   }
 })
- </script>
+</script>
+
