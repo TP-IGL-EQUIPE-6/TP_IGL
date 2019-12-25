@@ -158,7 +158,7 @@ a.discrete {
     <script src="/TP_IGL/resources/js/vue.js"></script>
     <div class="session">
         <div class="left"> </div>
-        <form id="app" @submit="checkForm" action="{{url('/note/getData')}}" method="get">
+        <form id="app" @submit="checkForm" action="{{url('/marks/getData')}}" method="get">
           
        
           <h4 class="h4Zone">Gestion de <span>Scolarité</span></h4>

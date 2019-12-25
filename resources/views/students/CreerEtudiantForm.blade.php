@@ -21,14 +21,6 @@
             <label>Matricule:</label>
             <input type="text" name="id" id="matricule" class='bg-form'>
         </div>
-        <div class="py-3">
-             <label>Email adresse:</label>
-            <input type="email" name="email" id="email" class='bg-form'>
-        </div>
-        <div class="py-3">
-            <label>Mot de passe:</label>
-            <input type="password" name="pwd" id="pwd">
-        </div>
         <div>
             <label>Niveau:</label>
             <select name="niveau" id="niveau">  
