@@ -16,14 +16,14 @@
 });*/
 
 Route:: get ('/', 'PagesController@welcome');
-Route:: get ('/about', 'PagesController@AfficherPlanning');
-Route:: get ('/AfficherPlanning', 'PagesController@about');
+Route:: get ('/about', 'PagesController@about');
+//Route:: get ('/AfficherPlanning', 'PagesController@about');
 
-Route:: get('note', 'EtudiantController@index');
-Route:: get('/note/store', 'EtudiantController@store');
-Route:: get('/note/create', 'EtudiantController@create');
-Route:: get('/note/getData' , 'EtudiantController@getData');
-Route:: get('/note/listeEtudiant' , 'EtudiantController@listeEtudiant');
+Route:: get('marks', 'EtudiantController@index');
+Route:: get('/marks/store', 'EtudiantController@store');
+Route:: get('/marks/create', 'EtudiantController@create');
+Route:: get('/marks/getData' , 'EtudiantController@getData');
+Route:: get('/marks/listeEtudiant' , 'EtudiantController@listeEtudiant');
 
 //Route :: resource('note', 'EtudiantController');
   

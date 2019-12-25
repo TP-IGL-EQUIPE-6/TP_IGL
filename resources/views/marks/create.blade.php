@@ -85,8 +85,6 @@ a.discrete {
 .labelZone{
   margin-left: 100px;
 }
-
-  
   .inputZone {
     font-size:  16px; 
   padding:  20px 0px; 
@@ -147,7 +145,7 @@ a.discrete {
 <body class="BodyZone">
     <div class="session">
         <div class="left"> </div>
-        <form action="{{url('/note/getData')}}" method="get">
+        <form action="{{url('/marks/getData')}}" method="get">
             {{csrf_field()}}
             <h4 class="h4Zone">Gestion de <span>Scolarité</span></h4>
             <p class="pZone">Introduisez ces informations avant de lancer la recherche d'un goupe</p>    
