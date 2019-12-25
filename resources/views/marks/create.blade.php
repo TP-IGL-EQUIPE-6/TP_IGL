@@ -85,8 +85,6 @@ a.discrete {
 .labelZone{
   margin-left: 100px;
 }
-
-  
   .inputZone {
     font-size:  16px; 
   padding:  20px 0px; 
