@@ -1,7 +1,6 @@
 @extends ('layouts.app')
-
 @section('content')
-    
+
 <title>Créer un compte étudiant</title>
 
 <div class='max-w-3xl mx-auto'>
@@ -11,21 +10,27 @@
         {{csrf_field()}}
 
         <div class="py-3">
+            <label>Nom:</label>
             <input type="text" name="nom" id="nom" class='bg-form'>
         </div>
         <div class="py-3">
+            <label>Prénnom:</label>
             <input type="text" name="prenom" id="prenom" class='bg-form'>
         </div>
         <div class="py-3">
-            <input type="text" name="matricule" id="matricule" class='bg-form'>
+            <label>Matricule:</label>
+            <input type="text" name="id" id="matricule" class='bg-form'>
         </div>
         <div class="py-3">
+             <label>Email adresse:</label>
             <input type="email" name="email" id="email" class='bg-form'>
         </div>
         <div class="py-3">
+            <label>Mot de passe:</label>
             <input type="password" name="pwd" id="pwd">
         </div>
         <div>
+            <label>Niveau:</label>
             <select name="niveau" id="niveau">  
                 <option value="1CP">1CP</option>
                 <option value="2CP">2CP</option>
@@ -35,6 +40,7 @@
             </select>
         </div>
         <div>
+            <label>Section:</label>
             <select name="section" id="section">  
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -42,6 +48,7 @@
             </select>
         </div>
         <div>
+            <label>Groupe:</label>
             <select name="grp" id="grp">  
                 <option value="1">1</option>
                 <option value="2">2</option>
