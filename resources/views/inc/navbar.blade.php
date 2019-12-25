@@ -1,7 +1,7 @@
 <style type="text/css">
 nav{
     width: 900;
-    margin-left: 235px;
+    margin-left: 277px;
 }
  .ulNav {
   list-style-type: none;
@@ -11,11 +11,11 @@ nav{
   background-color: #333;
 }
 
-li {
+.linav {
   float: left;
 }
 
-li a {
+.linav a {
   display: block;
   color: white;
   text-align: center;
@@ -26,7 +26,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.linav a:hover {
   background-color:  rgb(199, 53, 27);;
 }
 .active {
@@ -54,12 +54,13 @@ li a:hover {
 </style>
 
 <nav >
+      
     <div id="navbarsExampleDefault">
     <ul class="ulNav">
-        <li><a href="/TP_IGL/public/">Home</a></li>
-        <li><a href="/TP_IGL/public/about">About</a></li>
-        <li><a href="/TP_IGL/public/marks/create">Affichage des moyennes</a></li>
-        <li><a href="/TP_IGL/public/students/CreerEtudiantForm">Ajouter étudiant</a></li>
+        <li class="linav"><a href="/TP_IGL/public/">Home</a></li>
+        <li class="linav"><a href="/TP_IGL/public/about">About</a></li>
+        <li class="linav"><a href="/TP_IGL/public/marks/create">Affichage des moyennes</a></li>
+        <li class="linav"><a href="/TP_IGL/public/students/CreerEtudiantForm">Ajouter étudiant</a></li>
     </ul> 
 </div>
 </nav>

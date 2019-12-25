@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Moyenne extends Model
+class Moy extends Model
 {
     //
 }

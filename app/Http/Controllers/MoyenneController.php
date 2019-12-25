@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Moyenne;
 use DB;
 
-
 class MoyenneController extends Controller
 {
     public function index()
@@ -33,10 +32,11 @@ class MoyenneController extends Controller
         return view ('marks.getData')->with('student',$select); 
     }
 
-
     public function listeEtudiant()
     {
         $etudiants = Etudiant::all();
         return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
     }
 }
+
+

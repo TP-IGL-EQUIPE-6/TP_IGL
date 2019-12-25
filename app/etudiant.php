@@ -12,3 +12,4 @@ class Etudiant extends Model
         'id','nom','prenom','niveau','section','grp',
     ];
 }
+
