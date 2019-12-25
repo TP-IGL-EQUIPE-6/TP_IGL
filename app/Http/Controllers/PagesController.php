@@ -14,7 +14,4 @@ class PagesController extends Controller
         return view ('pages.about');
     }
 
-    public function AfficherPlanning(){
-        return view ('pages.AfficherPlanning');
-    }
 }

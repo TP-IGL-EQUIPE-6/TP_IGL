@@ -54,4 +54,14 @@ li a:hover {
 </style>
 
 <nav >
+    <div id="navbarsExampleDefault">
+    <ul class="ulNav">
+        <li><a href="/TP_IGL/public/">Home</a></li>
+        <li><a href="/TP_IGL/public/about">About</a></li>
+        <li><a href="/TP_IGL/public/marks/create">Affichage des moyennes</a></li>
+        <li><a href="/TP_IGL/public/students/CreerEtudiantForm">Ajouter étudiant</a></li>
+    </ul> 
+</div>
+</nav>
+      
 

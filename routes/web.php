@@ -16,17 +16,16 @@
 });*/
 
 Route:: get ('/', 'PagesController@welcome');
-Route:: get ('/about', 'PagesController@AfficherPlanning');
-Route:: get ('/AfficherPlanning', 'PagesController@about');
+Route:: get ('/about', 'PagesController@about');
+//Route:: get ('/AfficherPlanning', 'PagesController@about');
 
-Route:: get('note', 'EtudiantController@index');
-Route:: get('/note/store', 'EtudiantController@store');
-Route:: get('/note/create', 'EtudiantController@create');
-Route:: get('/note/update', 'EtudiantController@update');
+// route de l'affichage des moyennes des étudiants
+Route:: get('marks', 'MoyenneController@index');
+Route:: get('/marks/create', 'MoyenneController@create');
+Route:: get('/marks/getData' , 'MoyenneController@getData');
+Route:: get('/marks/listeEtudiant' , 'MoyenneController@listeEtudiant');
+//Route :: resource('marks', 'EtudiantController');
 
-
-Route:: get('/note/getData' , 'EtudiantController@getData');
-Route:: get('/note/listeEtudiant' , 'EtudiantController@listeEtudiant');
-
-//Route :: resource('note', 'EtudiantController');
-  
+// route de creation d'un compte étudiant
+Route::get('/students/CreerEtudiantForm','EtudiantController@createEtudiant')->name('Etudiant.create');
+Route::post('/students/store','EtudiantController@storeEtudiant')->name('Etudiant.store');
