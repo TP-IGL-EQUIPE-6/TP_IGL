@@ -1,5 +1,5 @@
 <style type="text/css">
-    table {
+	table {
   border-collapse: collapse;
 }
 

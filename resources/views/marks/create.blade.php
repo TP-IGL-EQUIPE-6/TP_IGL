@@ -1,4 +1,4 @@
-<style type="text/css">
+<style>
     .bodyZone {
   height:  100vh; 
   width:  100vw;
@@ -116,7 +116,6 @@ a.discrete {
     height:  56px; 
     width:  44px; 
     display:  flex; }
-
 .session {
   display:  flex; 
   flex-direction:  row; 
@@ -138,6 +137,7 @@ a.discrete {
   
   border-top-left-radius:  4px; 
   border-bottom-left-radius:  4px;
+
 }
 </style>
 
@@ -167,3 +167,6 @@ a.discrete {
     </div>
 </body>
 @endsection
+
+
+

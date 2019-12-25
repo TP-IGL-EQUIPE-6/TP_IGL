@@ -51,20 +51,7 @@ li a:hover {
 .buttonNav.hover{
   background-color: tomato;
 }
-
 </style>
-<nav >
-    <a href="#">{{config('app.name', 'Scolarité')}}</a>  
-    <div id="navbarsExampleDefault">
-    <ul class="ulNav">
-        <li><a href="/TP_IGL/public/">Home</a></li>
-        <li><a href="/TP_IGL/public/about">About</a></li>
-        <li><a href="/TP_IGL/public/note/create">Affichage des moyennes</a></li>
-        <li><a href="/TP_IGL/public/AjouterEtudiant">Ajouter étudiant</a></li>
-    </ul> 
-</div>
-</nav>
-      
 
-    
-  
+<nav >
+
