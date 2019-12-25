@@ -39,5 +39,3 @@ class EtudiantController extends Controller
     
 }
 
-
-

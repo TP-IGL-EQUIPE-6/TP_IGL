@@ -25,7 +25,6 @@ h1{
 
 </style>
 
-
 @extends ('layouts.app')
 
 @section('content')
@@ -54,5 +53,3 @@ h1{
     @endforeach
     </tbody>
 @endsection
-
-
