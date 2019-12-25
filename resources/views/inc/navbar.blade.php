@@ -59,7 +59,7 @@ li a:hover {
         <li><a href="/TP_IGL/public/">Home</a></li>
         <li><a href="/TP_IGL/public/about">About</a></li>
         <li><a href="/TP_IGL/public/marks/create">Affichage des moyennes</a></li>
-        <li><a href="/TP_IGL/public/AjouterEtudiant">Ajouter étudiant</a></li>
+        <li><a href="/TP_IGL/public/marks/CreerEtudiantForm">Ajouter étudiant</a></li>
     </ul> 
 </div>
 </nav>
