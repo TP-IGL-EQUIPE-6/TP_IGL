@@ -161,8 +161,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-       // Illuminate\Html\HtmlServiceProvider::Class, 
         Collective\Html\HtmlServiceProvider::class,
+        Qafeen\Manager\ManagerServiceProvider::class,
+        Modelizer\Selenium\SeleniumServiceProvider::class,
 
         /*
          * Package Service Providers...
