@@ -162,7 +162,10 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-
+        Qafeen\Manager\ManagerServiceProvider::class,
+        Modelizer\Selenium\SeleniumServiceProvider::class,
+        Laravel\Dusk\DuskServiceProvider::class,
+        
         /*
          * Package Service Providers...
          */
@@ -177,6 +180,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Way\Generators\GeneratorsServiceProvider::class,
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+      //  Laravel\Dusk\DuskServiceProvider::class,
 
     ],
 
