@@ -9,13 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "facebook/webdriver": "^1.7",
         "fideloper/proxy": "^4.0",
+        "laravel/dusk": "^5.8",
         "laravel/framework": "^5.8",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "5.8.0",
-        "modelizer/selenium": "~1.0",
+        "modelizer/selenium": "~2.0",
         "mpociot/laravel-apidoc-generator": "^4.0",
-        "phpunit/phpunit": "8.5.0",
+        "phpunit/phpunit": "7.5.0",
         "qafeen/manager": "^0.2.1"
     },
     "require-dev": {
