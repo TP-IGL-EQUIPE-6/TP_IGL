@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "chromedriver": "^79.0.0",
+        "selenium-side-runner": "^3.16.0",
         "vue-router": "^3.1.3"
     }
 }

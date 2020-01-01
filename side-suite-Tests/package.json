@@ -1,0 +1,25 @@
+{
+  "name": "Tests",
+  "version": "0.0.0",
+  "jest": {
+    "extraGlobals": [],
+    "modulePaths": [
+      "C:\\Users\\ben\\AppData\\Roaming\\npm\\node_modules\\selenium-side-runner\\node_modules",
+      "C:\\Users\\ben\\AppData\\Roaming\\npm\\node_modules"
+    ],
+    "setupFilesAfterEnv": [
+      "C:\\Users\\ben\\AppData\\Roaming\\npm\\node_modules\\selenium-side-runner\\node_modules\\jest-environment-selenium\\dist\\setup.js"
+    ],
+    "testEnvironment": "jest-environment-selenium",
+    "testEnvironmentOptions": {
+      "capabilities": {
+        "browserName": "chrome"
+      },
+      "params": {},
+      "runId": "47a39cca99ee605ac6a9cf74aa937b26",
+      "path": "C:\\Users\\ben\\AppData\\Roaming\\npm\\node_modules\\",
+      "timeout": 15000
+    }
+  },
+  "dependencies": {}
+}
