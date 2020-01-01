@@ -165,7 +165,7 @@ return [
         Qafeen\Manager\ManagerServiceProvider::class,
         Modelizer\Selenium\SeleniumServiceProvider::class,
         Laravel\Dusk\DuskServiceProvider::class,
-
+        
         /*
          * Package Service Providers...
          */

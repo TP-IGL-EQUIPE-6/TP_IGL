@@ -3,7 +3,8 @@
 namespace Tests;
 
 use Modelizer\Selenium\SeleniumTestCase;
-use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\Chrome\ChromeOptions;
+//use Facebook\WebDriver\WebDriverBy;
 
 class SeleniumTest extends SeleniumTestCase
 {
@@ -18,6 +19,15 @@ class SeleniumTest extends SeleniumTestCase
         $this->visit('/')
              ->see('index.php')
              ->hold(3);
+    }
+
+    public function set()
+    {
+        $this->setHost('localhost');
+        $this->setPort(4444);
+        $this->setBrowser('chrome');
+        //$this->setBrowserUrl('http://localhost:8000/');
+        $this->setBrowserUrl('http://localhost/TP_IGL/public/');
     }
 
    /* public function visit($path)
