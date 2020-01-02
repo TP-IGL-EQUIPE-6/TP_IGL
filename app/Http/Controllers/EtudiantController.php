@@ -5,9 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Etudiant;
 use DB;
+/**
+ * @group Etudiant
+ * API pour gérer les étudiants
+ */
 
 class EtudiantController extends Controller
 {
+    /**
+     * Afficher le formulaire de creation d'un nouvel étudiant 
+     * @return view('students.CreerEtudiantForm') la vue du formulaire de creation d'un nouvel etudiant
+     */
     public function createEtudiant(){
         return view('students.CreerEtudiantForm');
     }
@@ -19,9 +27,18 @@ class EtudiantController extends Controller
     public function update(){
 
     }
-
-    // Sauvgarder les données récuperer à partir du formulaire de creation d'un étudiant
-    // dans la table <<etudiants>> de la DB et se redirger vers la page d'acceuil 
+    /**
+     * Sauvgarder les données récuperer à partir du formulaire de creation d'un étudiant
+     *  dans la table <<etudiants>> de la DB et se redirger vers la page d'acceuil 
+     * @param request Request contient les informations suivantes:
+     * 'id': l'idantifiant de l'etudiant
+     * 'nom': le nom de l'etudiant
+     * 'prenom': le prenom de l'etudiant
+     * 'niveau': le niveau de l'etudiant
+     * 'section': la section de l'etudiant
+     * 'grp': le groupe de l'etudiant
+     * @return view('pages.welcome') vue de la page d'acceuil
+     */
     public function storeEtudiant(Request $request)
     {
         //remplissage de la table etudiant
