@@ -26,17 +26,17 @@ class MoyenneController extends Controller
         $varNiveau = $request->get('niveau');
         $varGrp = $request->get('grp');
         $select = DB:: table('etudiants')
-        ->join('moy', "etudiants.id", '=', 'moy.matricule')
+        ->join('moy', 'etudiants.id', '=', 'moy.matricule')
         ->where ([['niveau', $varNiveau], ['grp', $varGrp]])
         ->get();
         return view ('marks.getData')->with('student',$select); 
     }
 
-    public function listeEtudiant()
+   /* public function listeEtudiant()
     {
         $etudiants = Etudiant::all();
         return view('marks.listeEtudiant', ['etudiants' => $etudiants]);
-    }
+    } */
 }
 
 
