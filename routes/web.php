@@ -1,13 +1,13 @@
 <?php
 
-Route:: get ('/', 'PagesController@welcome');
-Route:: get ('/about', 'PagesController@about');
+Route:: get ('/', 'PagesController@welcome')->name("peges.welcome");
+Route:: get ('/about', 'PagesController@about')->name("peges.about");
 
 // route de l'affichage des moyennes des étudiants
-Route:: get('marks', 'MoyenneController@index');
-Route:: get('/marks/create', 'MoyenneController@create');
-Route:: get('/marks/getData' , 'MoyenneController@getData');
-Route:: get('/marks/listeEtudiant' , 'MoyenneController@listeEtudiant');
+Route:: get('marks', 'MoyenneController@index')->name("marks.index");
+Route:: get('/marks/create', 'MoyenneController@create')->name("marks.create");
+Route:: get('/marks/getData' , 'MoyenneController@getData')->name("marks.getData");
+Route:: get('/marks/listeEtudiant' , 'MoyenneController@listeEtudiant')->name("marks.listeEtudiant");
 
 // route de creation d'un compte étudiant
 Route::get('/students/CreerEtudiantForm','EtudiantController@createEtudiant')->name('Etudiant.create');
