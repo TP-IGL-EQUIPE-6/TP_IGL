@@ -8,14 +8,13 @@ use Tests\TestCase;
 class ExampleTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
+     * 
      * @return void
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
-
+        $input = array('Niveau' => '1CS', 'Groupe' => '9');
+        $response = $this->call('get', '/marks/create', $input);
         $response->assertStatus(200);
     }
 }
