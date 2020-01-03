@@ -17,3 +17,6 @@
     -To run the application using Docker and docker-compose: 
     Run the command "docker-compose up" in the rout folder
     That's it. (Docker will install all the images and the dependencies needed and set everything up for you)
+    
+    
+    (PS. tp_igl.sql is the database file, we added it to the project file)
