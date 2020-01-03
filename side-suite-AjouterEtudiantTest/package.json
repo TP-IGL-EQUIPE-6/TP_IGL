@@ -1,5 +1,5 @@
 {
-  "name": "Tests",
+  "name": "AjouterEtudiantTest",
   "version": "0.0.0",
   "jest": {
     "extraGlobals": [],
@@ -16,7 +16,7 @@
         "browserName": "chrome"
       },
       "params": {},
-      "runId": "adf874e8fa2e553694a16aebe02fa5d6",
+      "runId": "b954bf74b6f9234fb161b7ceb9f769b1",
       "path": "C:\\Users\\ben\\AppData\\Roaming\\npm\\node_modules\\",
       "timeout": 15000
     }

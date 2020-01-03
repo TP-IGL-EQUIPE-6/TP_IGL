@@ -7,8 +7,8 @@ global.BASE_URL = configuration.baseUrl || 'http://localhost';
 let vars = {};
 jest.setTimeout(300000);
 describe("Default Suite", () => {
-  it("AjouterEtudiantTest", async () => {
-    await tests["AjouterEtudiantTest"](driver, vars);
+  it("AjouterEtudiantSeleniumTest", async () => {
+    await tests["AjouterEtudiantSeleniumTest"](driver, vars);
     expect(true).toBeTruthy();
   });
 });

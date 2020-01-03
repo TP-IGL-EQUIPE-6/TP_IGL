@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class StudentTest extends TestCase
 {
     
-    public function TestCreateStudentTest(){
+    public function testCreateStudentTest(){
         $data = [
             'nom'=>'Khebizi',
             'prenom'=>'ahlem',
