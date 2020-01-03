@@ -14,4 +14,4 @@ Route::get('/students/CreerEtudiantForm','EtudiantController@createEtudiant')->n
 Route::post('/students/store','EtudiantController@storeEtudiant')->name('Etudiant.store');
 
 // route de la documentation
-//\Mpociot\ApiDoc\ApiDoc::routes("/Documentation");
+\Mpociot\ApiDoc\ApiDoc::routes("/Documentation");

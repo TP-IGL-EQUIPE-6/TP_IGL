@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     /**
+     *  welcome()
      * retoune une vue de la page d'accueil
      * @return view('pages.welcome') vue de la page d'accueil
      */
@@ -17,6 +18,7 @@ class PagesController extends Controller
         return view ('pages.welcome');
     }
     /**
+     * about()
      * retoune une vue de la page d'apropos
      * @return view('pages.about') vue de la page d'apropos
      */
@@ -24,6 +26,7 @@ class PagesController extends Controller
         return view ('pages.about');
     }
     /**
+     * AfficherPlanning()
      * retoune une vue de la page d'affichage du planning
      * @return view('pages.AfficherPlanning') vue de la page d'affichage du planning
      */
