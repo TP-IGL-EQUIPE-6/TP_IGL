@@ -15,20 +15,14 @@ class StudentTest extends TestCase
         $data = [
             'nom'=>'Khebizi',
             'prenom'=>'ahlem',
+            'Matricule'=>'170040',
             'niveau'=>'1cs',
             'section'=>'B',
             'Groupe'=> 9,
         ];
-$user = factory(\App\User::class)->create();
-$response = $this->actingAs($user, 'api')->json('POST', '/students/CreerEtudiantForm',$data);
-$response->assertStatus(200);
-$response->assertJson(['status' => true]);
-$response->assertJson(['message' => "Product Created!"]);
-$response->assertJson(['data' => $data]);
-   
-}
-
-     
+        $response = $this->json('get', '/students/CreerEtudiantForm',$data);
+        $response->assertStatus(200);
+    } 
 }
 
 

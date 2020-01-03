@@ -13,8 +13,9 @@ class ExampleTest extends TestCase
      */
     public function testAfficherMoyenneTest()
     {
+        $input = ['niveau'=>'1cs', 'Groupe'=> 9 ];
         $this->withoutMiddleware();
-        $response = $this->json('get', '/marks/create');
+        $response = $this->json('get', '/marks/create', $input);
         $response->assertStatus(200);
     }
 }
