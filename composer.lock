@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "120af6fab5572d78050632316a72a58d",
+    "content-hash": "c914b83413c65d60c718919a0e53055b",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -1279,74 +1279,6 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
-        },
-        {
-            "name": "laravel/dusk",
-            "version": "v5.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/dusk.git",
-                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/5a160ed9ca39dcde910d971733fa750a5eb1d329",
-                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-zip": "*",
-                "facebook/webdriver": "^1.7",
-                "illuminate/console": "~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0",
-                "nesbot/carbon": "^1.20|^2.0",
-                "php": ">=7.1.0",
-                "symfony/console": "^4.0|^5.0",
-                "symfony/finder": "^4.0|^5.0",
-                "symfony/process": "^4.0|^5.0",
-                "vlucas/phpdotenv": "^2.2|^3.0|^4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^7.5|^8.0"
-            },
-            "suggest": {
-                "ext-pcntl": "Used to gracefully terminate Dusk when tests are running."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Dusk\\DuskServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Dusk\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
-            "keywords": [
-                "laravel",
-                "testing",
-                "webdriver"
-            ],
-            "time": "2019-12-30T21:45:39+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7270,6 +7202,74 @@
                 "testing"
             ],
             "time": "2019-07-30T14:57:44+00:00"
+        },
+        {
+            "name": "laravel/dusk",
+            "version": "v5.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/dusk.git",
+                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/5a160ed9ca39dcde910d971733fa750a5eb1d329",
+                "reference": "5a160ed9ca39dcde910d971733fa750a5eb1d329",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-zip": "*",
+                "facebook/webdriver": "^1.7",
+                "illuminate/console": "~5.7.0|~5.8.0|^6.0|^7.0",
+                "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0",
+                "nesbot/carbon": "^1.20|^2.0",
+                "php": ">=7.1.0",
+                "symfony/console": "^4.0|^5.0",
+                "symfony/finder": "^4.0|^5.0",
+                "symfony/process": "^4.0|^5.0",
+                "vlucas/phpdotenv": "^2.2|^3.0|^4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.5|^8.0"
+            },
+            "suggest": {
+                "ext-pcntl": "Used to gracefully terminate Dusk when tests are running."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Dusk\\DuskServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Dusk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
+            "keywords": [
+                "laravel",
+                "testing",
+                "webdriver"
+            ],
+            "time": "2019-12-30T21:45:39+00:00"
         },
         {
             "name": "scrivo/highlight.php",

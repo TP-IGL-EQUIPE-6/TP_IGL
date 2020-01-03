@@ -60,6 +60,7 @@ nav{
         <li class="linav"><a href="{{route('marks.create')}}">Affichage des moyennes</a></li>
         <li class="linav"><a href="{{route('Etudiant.create')}}">Ajouter étudiant</a></li>
         <li class="linav"><a href="{{route('peges.about')}}">About</a></li>
+        
     </ul> 
 </div>
 </nav>

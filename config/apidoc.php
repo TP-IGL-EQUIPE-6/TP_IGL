@@ -7,7 +7,7 @@ return [
      * - "laravel" will generate the documentation as a Blade view,
      * so you can add routing and authentication.
      */
-    'type' => 'static',
+    'type' => 'laravel',
 
     /*
      * The router to be used (Laravel or Dingo).
