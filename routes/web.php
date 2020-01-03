@@ -12,3 +12,6 @@ Route:: get('/marks/listeEtudiant' , 'MoyenneController@listeEtudiant')->name("m
 // route de creation d'un compte étudiant
 Route::get('/students/CreerEtudiantForm','EtudiantController@createEtudiant')->name('Etudiant.create');
 Route::post('/students/store','EtudiantController@storeEtudiant')->name('Etudiant.store');
+
+// route de la documentation
+//\Mpociot\ApiDoc\ApiDoc::routes("/Documentation");

@@ -35,9 +35,14 @@ class MoyenneController extends Controller
     /**
      * afficher les nom des etudiants et calcul leur moyennes
      * @param request Request contient les informations suivantes:
-     * 'niveau': le niveau d'étude 
-     * 'grp' int : le numero du groupe
-     * @return student un tableau de chaines de caractère 
+     * @bodyParam niveau String required  le niveau d'étude. Example: 1CS
+     * @bodyParam grp int required le numero du groupe. Example:9
+     * @return student un tableau de String contient les moyenne
+     * 
+     * @response{
+     *  "niveau": "2CP",
+     *  "grp": 1,
+     * } 
      */
     //
     public function getData(Request $request)

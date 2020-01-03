@@ -31,12 +31,12 @@ class EtudiantController extends Controller
      * Sauvgarder les données récuperer à partir du formulaire de creation d'un étudiant
      *  dans la table <<etudiants>> de la DB et se redirger vers la page d'acceuil 
      * @param request Request contient les informations suivantes:
-     * 'id': l'idantifiant de l'etudiant
-     * 'nom': le nom de l'etudiant
-     * 'prenom': le prenom de l'etudiant
-     * 'niveau': le niveau de l'etudiant
-     * 'section': la section de l'etudiant
-     * 'grp': le groupe de l'etudiant
+     * @bodyParam id int l'idantifiant de l'etudiant. No-example
+     * @bodyParam nom String required le nom de l'etudiant. Example: BAIBA
+     * @bodyParam prenom String required le prenom de l'etudiant. Example: Loubna
+     * @bodyParam niveauString required le niveau de l'etudiant. Example: 1CS
+     * @bodyParam sectionString required la section de l'etudiant. Example: B
+     * @bodyParam grp int required  le groupe de l'etudiant. Example: 9
      * @return view('pages.welcome') vue de la page d'acceuil
      */
     public function storeEtudiant(Request $request)
