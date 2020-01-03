@@ -1,5 +1,6 @@
-@extends ('layouts.app')
 
+
+@extends ('layouts.app')
 @section('content')
     <h1>Affichage etudiants</h1>
     @if(count($etud)>1)

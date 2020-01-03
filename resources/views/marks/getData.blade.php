@@ -28,6 +28,7 @@ h1{
 @extends ('layouts.app')
 
 @section('content')
+
     <h1>Affichage liste des etudiants avec moyenne</h1>
     <table id="example" class="display" style="width:100%">
         <thead>

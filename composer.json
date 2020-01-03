@@ -15,7 +15,6 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "5.8.0",
         "modelizer/selenium": "~2.0",
-        "mpociot/laravel-apidoc-generator": "^4.0",
         "phpunit/phpunit": "7.5.0",
         "qafeen/manager": "^0.2.1",
         "symfony/css-selector": "4.2"
@@ -26,6 +25,7 @@
         "laravel/browser-kit-testing": "^5.1",
         "laravel/dusk": "^5.8",
         "mockery/mockery": "^1.0",
+        "mpociot/laravel-apidoc-generator": "^4.0",
         "nunomaduro/collision": "^3.0",
         "xethron/migrations-generator": "^2.0"
     },

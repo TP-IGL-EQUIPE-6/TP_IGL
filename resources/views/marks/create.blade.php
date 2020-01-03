@@ -152,44 +152,38 @@ a.discrete {
 @extends ('layouts.app')
 
 @section('content')
-           
-            
+
+<!-- body -->
 <body class="BodyZone">
     <script src="/TP_IGL/resources/js/vue.js"></script>
     <div class="session">
         <div class="left"> </div>
         <form id="app" @submit="checkForm" action="{{url('/marks/getData')}}" method="get">
-          
-       
-          <h4 class="h4Zone">Gestion de <span>Scolarité</span></h4>
-                  <p class="pZone">Introduisez ces informations avant de lancer la recherche d'un goupe</p>
-                  
-      <label class="labelZone" for="niveau">Niveau:</label> 
-      <select class="selectZone" name="niveau" id="niveau" v-model="niveau"> 
+        <h4 class="h4Zone">Gestion de <span>Scolarité</span></h4>
+        <p class="pZone">Introduisez ces informations avant de lancer la recherche d'un goupe</p>         
+        <label class="labelZone" for="niveau">Niveau:</label> 
+        <select class="selectZone" name="niveau" id="niveau" v-model="niveau"> 
           <option value="1cp">1CP</option>
           <option value="2cp">2CP</option>
           <option value="1cs">1CS</option>
           <option value="2cs">2CS</option>
           <option value="3cs">3CS</option>
-      </select>
-  </br> </br>
+        </select>
+    </br> </br>
   <label class="labelZone" for="grp">Groupe : </label>
   <input class="inputZone" placeholder="grp" type="number" max="9" min="1" name="grp" id="grp" autocomplete="off" v-model="grp"></br></br>      
   <!--
-  <p class="perr" v-if="errors.length">
-                    
+  <p class="perr" v-if="errors.length">             
     <ul>
-      
-      <li class="err" v-for="error in errors "> error </li>
-      
+      <li class="err" v-for="error in errors "> error </li>  
     </ul>
    </p>-->
   <input class="buttonZone" type="submit" value="Recherche">  
- </form>
-    </div>
-    
+  </form>
+  </div>   
 </body>
 @endsection
+<!-- script -->
 <script>
 const app = new Vue({
   el:'#app',

@@ -1,3 +1,4 @@
+// le teste automatique (selenium) fait par selenium IDE 
 const utils = require("./utils.js");
 const tests = {};
 tests["AjouterEtudiantTest"] = async (driver, vars, opts = {}) => {

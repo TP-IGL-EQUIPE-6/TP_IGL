@@ -1,5 +1,6 @@
 <?php
 
+/*
 namespace Tests\Feature;
 
 use Tests\TestCase;
@@ -9,8 +10,8 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class StudentTest extends TestCase
 {
-    use DatabaseMigrations;
-    /** @test */
+    //use DatabaseMigrations;
+    /** @test 
     public function student_can_be_created(){
     $user = factory(App\User::class)->create();
         $e = $user->Etudiant()->create([
@@ -32,9 +33,11 @@ class StudentTest extends TestCase
      * A basic test example.
      *
      * @return void
-     */
+    
     public function testExample()
     {
         $this->assertTrue(true);
     }
 }
+
+*/

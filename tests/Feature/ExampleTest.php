@@ -11,7 +11,7 @@ class ExampleTest extends TestCase
      * 
      * @return void
      */
-    public function testBasicTest()
+    public function testAfficherMoyenneTest()
     {
         $input = array('Niveau' => '1CS', 'Groupe' => '9');
         $response = $this->call('get', '/marks/create', $input);

@@ -55,10 +55,15 @@ nav{
 
 <nav >      
     <div id="navbarsExampleDefault">
+    <!-- navbar -->
     <ul class="ulNav">
+        <!-- lien vers la page Homz -->
         <li class="linav"><a href="/TP_IGL/public/">Home</a></li>
+        <!-- lien vers la page Afficher moyenne -->
         <li class="linav"><a href="/TP_IGL/public/marks/create">Affichage des moyennes</a></li>
+        <!-- lien vers la page Ajouter étudiant -->
         <li class="linav"><a href="/TP_IGL/public/students/CreerEtudiantForm">Ajouter étudiant</a></li>
+        <!-- lien vers la page About -->
         <li class="linav"><a href="/TP_IGL/public/about">About</a></li>
     </ul> 
 </div>

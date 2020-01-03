@@ -153,7 +153,7 @@ a.discrete {
 @section('content')
 
 <title>Créer un compte étudiant</title>
-
+<!-- body -->
 <body class="BodyZone">
     <script src="/TP_IGL/resources/js/vue.js"></script>
     <div class="session">
@@ -223,6 +223,7 @@ a.discrete {
     </div>
 </body>
 @endsection
+<!-- script -->
 <script>
 const app = new Vue({
   el:'#app',
