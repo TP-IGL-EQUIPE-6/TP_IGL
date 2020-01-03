@@ -19,4 +19,4 @@
     That's it. (Docker will install all the images and the dependencies needed and set everything up for you)
     
     
-    (PS. tp_igl.sql is the database file, we added it to the project file)
+    (PS. tp_igl.sql is the database file, we added it to the project file, take it off before you run)
