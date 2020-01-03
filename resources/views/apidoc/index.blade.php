@@ -51,7 +51,8 @@
 <h1>Etudiant</h1>
 <p>API pour gérer les étudiants</p>
 <!-- START_747cdd3795f9b415ced834e3e503c1f6 -->
-<h2>Afficher le formulaire de creation d&#039;un nouvel étudiant</h2>
+<h2>createEtudiant()</h2>
+<p>Afficher le formulaire de creation d&#039;un nouvel étudiant</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -82,8 +83,9 @@ fetch(url, {
 <p><code>GET students/CreerEtudiantForm</code></p>
 <!-- END_747cdd3795f9b415ced834e3e503c1f6 -->
 <!-- START_b4a2a20fca73d4f778a9a2c8f2089d54 -->
-<h2>Sauvgarder les données récuperer à partir du formulaire de creation d&#039;un étudiant</h2>
-<p>dans la table &lt;&lt;etudiants&gt;&gt; de la DB et se redirger vers la page d&#039;acceuil</p>
+<h2>storeEtudiant()</h2>
+<p>Sauvgarder les données récuperer à partir du formulaire de creation d&#039;un étudiant
+dans la table &lt;&lt;etudiants&gt;&gt; de la DB et se redirger vers la page d&#039;acceuil</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -91,7 +93,7 @@ fetch(url, {
     "http://localhost/students/store" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"nom":"BAIBA","prenom":"Loubna","niveauString":"1CS","sectionString":"B","grp":9}'
+    -d '{"nom":"BAIBA","prenom":"Loubna","niveau":"1CS","section":"B","grp":9}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/students/store"
@@ -105,8 +107,8 @@ let headers = {
 let body = {
     "nom": "BAIBA",
     "prenom": "Loubna",
-    "niveauString": "1CS",
-    "sectionString": "B",
+    "niveau": "1CS",
+    "section": "B",
     "grp": 9
 }
 
@@ -149,15 +151,15 @@ fetch(url, {
 <td>le prenom de l'etudiant.</td>
 </tr>
 <tr>
-<td><code>niveauString</code></td>
+<td><code>niveau</code></td>
+<td>String</td>
 <td>required</td>
-<td>optional</td>
 <td>le niveau de l'etudiant.</td>
 </tr>
 <tr>
-<td><code>sectionString</code></td>
+<td><code>section</code></td>
+<td>String</td>
 <td>required</td>
-<td>optional</td>
 <td>la section de l'etudiant.</td>
 </tr>
 <tr>
@@ -172,8 +174,9 @@ fetch(url, {
 <h1>Moyenne</h1>
 <p>API pour gerer les moyennes des etudiants</p>
 <!-- START_dafb4ae2651e3d6459ecad837cdb9e9f -->
-<h2>recupere la liste de tous les étudiants a partir de la BDD</h2>
-<p>et la transmets en paramettre à la vue &quot;marks.index&quot;</p>
+<h2>index()</h2>
+<p>recupere la liste de tous les étudiants a partir de la BDD
+et la transmets en paramettre à la vue &quot;marks.index&quot;</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -206,7 +209,8 @@ fetch(url, {
 <p><code>GET marks</code></p>
 <!-- END_dafb4ae2651e3d6459ecad837cdb9e9f -->
 <!-- START_6ec91152c77eb2573957bdb6dd098e84 -->
-<h2>retoune une vue du formuaire pour rechercher les moyennes d&#039;un groupe</h2>
+<h2>create()</h2>
+<p>retoune une vue du formuaire pour rechercher les moyennes d&#039;un groupe</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -237,7 +241,8 @@ fetch(url, {
 <p><code>GET marks/create</code></p>
 <!-- END_6ec91152c77eb2573957bdb6dd098e84 -->
 <!-- START_5915888e6945532275df0cc61dad71f3 -->
-<h2>afficher les nom des etudiants et calcul leur moyennes</h2>
+<h2>getData()</h2>
+<p>afficher les nom des etudiants et calcul leur moyennes</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -303,7 +308,8 @@ fetch(url, {
 <h1>Pages</h1>
 <p>API pour gérer le pages</p>
 <!-- START_53be1e9e10a08458929a2e0ea70ddb86 -->
-<h2>retoune une vue de la page d&#039;accueil</h2>
+<h2>welcome()</h2>
+<p>retoune une vue de la page d&#039;accueil</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -334,7 +340,8 @@ fetch(url, {
 <p><code>GET /</code></p>
 <!-- END_53be1e9e10a08458929a2e0ea70ddb86 -->
 <!-- START_f453d442cbe270ed50c2def3a3416115 -->
-<h2>retoune une vue de la page d&#039;apropos</h2>
+<h2>about()</h2>
+<p>retoune une vue de la page d&#039;apropos</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>

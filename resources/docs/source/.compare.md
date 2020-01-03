@@ -24,7 +24,8 @@ Welcome to the generated API reference.
 
 API pour gérer les étudiants
 <!-- START_747cdd3795f9b415ced834e3e503c1f6 -->
-## Afficher le formulaire de creation d&#039;un nouvel étudiant
+## createEtudiant()
+Afficher le formulaire de creation d&#039;un nouvel étudiant
 
 > Example request:
 
@@ -67,7 +68,8 @@ null
 <!-- END_747cdd3795f9b415ced834e3e503c1f6 -->
 
 <!-- START_b4a2a20fca73d4f778a9a2c8f2089d54 -->
-## Sauvgarder les données récuperer à partir du formulaire de creation d&#039;un étudiant
+## storeEtudiant()
+Sauvgarder les données récuperer à partir du formulaire de creation d&#039;un étudiant
  dans la table &lt;&lt;etudiants&gt;&gt; de la DB et se redirger vers la page d&#039;acceuil
 
 > Example request:
@@ -77,7 +79,7 @@ curl -X POST \
     "http://localhost/students/store" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"nom":"BAIBA","prenom":"Loubna","niveauString":"1CS","sectionString":"B","grp":9}'
+    -d '{"nom":"BAIBA","prenom":"Loubna","niveau":"1CS","section":"B","grp":9}'
 
 ```
 
@@ -94,8 +96,8 @@ let headers = {
 let body = {
     "nom": "BAIBA",
     "prenom": "Loubna",
-    "niveauString": "1CS",
-    "sectionString": "B",
+    "niveau": "1CS",
+    "section": "B",
     "grp": 9
 }
 
@@ -119,8 +121,8 @@ Parameter | Type | Status | Description
     `id` | integer |  optional  | l'idantifiant de l'etudiant.
         `nom` | String |  required  | le nom de l'etudiant.
         `prenom` | String |  required  | le prenom de l'etudiant.
-        `niveauString` | required |  optional  | le niveau de l'etudiant.
-        `sectionString` | required |  optional  | la section de l'etudiant.
+        `niveau` | String |  required  | le niveau de l'etudiant.
+        `section` | String |  required  | la section de l'etudiant.
         `grp` | integer |  required  | le groupe de l'etudiant.
     
 <!-- END_b4a2a20fca73d4f778a9a2c8f2089d54 -->
@@ -129,7 +131,8 @@ Parameter | Type | Status | Description
 
 API pour gerer les moyennes des etudiants
 <!-- START_dafb4ae2651e3d6459ecad837cdb9e9f -->
-## recupere la liste de tous les étudiants a partir de la BDD
+## index()
+recupere la liste de tous les étudiants a partir de la BDD
 et la transmets en paramettre à la vue &quot;marks.index&quot;
 
 > Example request:
@@ -175,7 +178,8 @@ fetch(url, {
 <!-- END_dafb4ae2651e3d6459ecad837cdb9e9f -->
 
 <!-- START_6ec91152c77eb2573957bdb6dd098e84 -->
-## retoune une vue du formuaire pour rechercher les moyennes d&#039;un groupe
+## create()
+retoune une vue du formuaire pour rechercher les moyennes d&#039;un groupe
 
 > Example request:
 
@@ -218,7 +222,8 @@ null
 <!-- END_6ec91152c77eb2573957bdb6dd098e84 -->
 
 <!-- START_5915888e6945532275df0cc61dad71f3 -->
-## afficher les nom des etudiants et calcul leur moyennes
+## getData()
+afficher les nom des etudiants et calcul leur moyennes
 
 > Example request:
 
@@ -277,7 +282,8 @@ Parameter | Type | Status | Description
 
 API pour gérer le pages
 <!-- START_53be1e9e10a08458929a2e0ea70ddb86 -->
-## retoune une vue de la page d&#039;accueil
+## welcome()
+retoune une vue de la page d&#039;accueil
 
 > Example request:
 
@@ -320,7 +326,8 @@ null
 <!-- END_53be1e9e10a08458929a2e0ea70ddb86 -->
 
 <!-- START_f453d442cbe270ed50c2def3a3416115 -->
-## retoune une vue de la page d&#039;apropos
+## about()
+retoune une vue de la page d&#039;apropos
 
 > Example request:
 
