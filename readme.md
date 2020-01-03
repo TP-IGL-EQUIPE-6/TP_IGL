@@ -1,5 +1,5 @@
 
-TP IGL
+        TP IGL
 
 -To run the application in a server locally : 
 you need to have xampp, download it via 'https://www.apachefriends.org/fr/download.html' 
